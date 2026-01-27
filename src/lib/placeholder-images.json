@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "video-placeholder-1",
+      "description": "Genesis video placeholder",
+      "imageUrl": "https://images.unsplash.com/photo-1663941842420-8f8e27ccf882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMGFuaW1hdGlvbnxlbnwwfHx8fDE3Njg3NDI2NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract animation"
+    },
+    {
+      "id": "video-placeholder-2",
+      "description": "Exodus video placeholder",
+      "imageUrl": "https://images.unsplash.com/photo-1750859876327-f9360664c362?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxqb3VybmV5JTIwZGVzZXJ0fGVufDB8fHx8MTc2ODc2NjY0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journey desert"
+    },
+    {
+      "id": "video-placeholder-3",
+      "description": "Leviticus video placeholder",
+      "imageUrl": "https://images.unsplash.com/photo-1759625730215-ac3830e19145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY3JvbGwlMjBhbmNpZW50fGVufDB8fHx8MTc2ODc2NjY0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scroll ancient"
+    },
+    {
+      "id": "video-placeholder-4",
+      "description": "Numbers video placeholder",
+      "imageUrl": "https://images.unsplash.com/photo-1454923634634-bd1614719a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjcm93ZCUyMHBlb3BsZXxlbnwwfHx8fDE3Njg3NjY2NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "crowd people"
+    }
+  ]
+}

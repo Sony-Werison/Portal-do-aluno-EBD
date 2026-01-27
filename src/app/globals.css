@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 259 84% 69%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 221 83% 53%;
+    --radius: 1.5rem;
+  }
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 259 84% 69%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 221 83% 53%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans selection:bg-indigo-500/30 selection:text-white;
+  }
+  .custom-scrollbar::-webkit-scrollbar { 
+    width: 4px; 
+  } 
+  .custom-scrollbar::-webkit-scrollbar-track { 
+    background: transparent; 
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb { 
+    background: #333; 
+    border-radius: 4px; 
+  } 
+  @keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+  } 
+  .animate-fadeIn { 
+    animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+  }
+}

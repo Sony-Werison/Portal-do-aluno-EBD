@@ -1,0 +1,473 @@
+[debug] [2026-01-26T18:05:18.439Z] ----------------------------------------------------------------------
+[debug] [2026-01-26T18:05:18.442Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /home/user/studio/node_modules/.bin/firebase deploy
+[debug] [2026-01-26T18:05:18.443Z] CLI Version:   13.35.1
+[debug] [2026-01-26T18:05:18.444Z] Platform:      linux
+[debug] [2026-01-26T18:05:18.444Z] Node Version:  v20.19.1
+[debug] [2026-01-26T18:05:18.445Z] Time:          Mon Jan 26 2026 18:05:18 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-26T18:05:18.445Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-26T18:05:19.500Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-26T18:05:19.501Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-26T18:05:19.503Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-26T18:05:19.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-26T18:05:19.519Z] > authorizing via signed-in user (pereirawerison@gmail.com)
+[debug] [2026-01-26T18:05:19.522Z] [iam] checking project studio-7878039128-bacd5 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-26T18:05:19.535Z] Checked if tokens are valid: false, expires at: 1769450865082
+[debug] [2026-01-26T18:05:19.537Z] Checked if tokens are valid: false, expires at: 1769450865082
+[debug] [2026-01-26T18:05:19.541Z] > refreshing access token with scopes: []
+[debug] [2026-01-26T18:05:19.554Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-26T18:05:19.559Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-26T18:05:19.914Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-26T18:05:19.915Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-26T18:05:19.945Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions [none]
+[debug] [2026-01-26T18:05:19.945Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions x-goog-quota-user=projects/studio-7878039128-bacd5
+[debug] [2026-01-26T18:05:19.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:05:20.012Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions 200
+[debug] [2026-01-26T18:05:20.013Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:05:20.015Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:20.015Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:20.016Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:05:20.290Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:05:20.290Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 {"projectId":"studio-7878039128-bacd5","projectNumber":"848465879385","displayName":"Firebase app","name":"projects/studio-7878039128-bacd5","resources":{"hostingSite":"studio-7878039128-bacd5","realtimeDatabaseInstance":"studio-7878039128-bacd5-default-rtdb"},"state":"ACTIVE","etag":"1_fb72c8ae-df9f-4428-a5c0-5234ce4a48d3"}
+[debug] [2026-01-26T18:05:33.779Z] defaultcredentials: writing to file /home/user/.config/firebase/pereirawerison_gmail_com_application_default_credentials.json
+[debug] [2026-01-26T18:05:33.805Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:33.806Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:33.808Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites pageToken=&pageSize=10
+[debug] [2026-01-26T18:05:34.040Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:05:34.041Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:05:34.046Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:34.046Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:34.047Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 
+[debug] [2026-01-26T18:05:34.249Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:05:34.249Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:05:34.250Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:34.250Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:34.254Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config [none]
+[debug] [2026-01-26T18:05:34.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config 200
+[debug] [2026-01-26T18:05:34.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config {"projectId":"studio-7878039128-bacd5","appId":"1:848465879385:web:d5ce2db68efe0f82d32c48","databaseURL":"https://studio-7878039128-bacd5-default-rtdb.firebaseio.com","storageBucket":"studio-7878039128-bacd5.firebasestorage.app","apiKey":"AIzaSyAsBTVKptCJdXBO4c2dwl3RyGQ0KWTdYj4","authDomain":"studio-7878039128-bacd5.firebaseapp.com","messagingSenderId":"848465879385","projectNumber":"848465879385","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-26T18:05:53.844Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:53.847Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:05:53.849Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:05:54.016Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:05:54.023Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 {"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'serverActions'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 15.5.9
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 28.9s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+./src/app/page.tsx:189:32
+Type error: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'unknown' is not assignable to parameter of type 'string'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path?: string | undefined, ...pathSegments: string[]): DocumentReference<unknown, DocumentData>', gave the following error.
+    Argument of type 'Firestore' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'Firestore' is missing the following properties from type 'CollectionReference<unknown, DocumentData>': id, path, parent, withConverter, and 2 more.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'Firestore' is missing the following properties from type 'DocumentReference<unknown, DocumentData>': converter, firestore, id, path, and 2 more.
+
+  187 |             const deletedIds = [...oldItemIds].filter(id => !newItemIds.has(id));
+  188 |             for (const id of deletedIds) {
+> 189 |                 const docRef = doc(firestore, collectionName, id);
+      |                                ^
+  190 |                 batch.delete(docRef);
+  191 |             }
+  192 |         } else if (Array.isArray(newItems)) { // This case handles array updates when appData might be null or collection empty
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-01-26T18:07:13.922Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-26T18:13:07.962Z] ----------------------------------------------------------------------
+[debug] [2026-01-26T18:13:07.965Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /home/user/studio/node_modules/.bin/firebase deploy
+[debug] [2026-01-26T18:13:07.965Z] CLI Version:   13.35.1
+[debug] [2026-01-26T18:13:07.966Z] Platform:      linux
+[debug] [2026-01-26T18:13:07.966Z] Node Version:  v20.19.1
+[debug] [2026-01-26T18:13:07.966Z] Time:          Mon Jan 26 2026 18:13:07 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-26T18:13:07.966Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-26T18:13:08.468Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-26T18:13:08.468Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-26T18:13:08.468Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-26T18:13:08.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-26T18:13:08.518Z] > authorizing via signed-in user (pereirawerison@gmail.com)
+[debug] [2026-01-26T18:13:08.518Z] [iam] checking project studio-7878039128-bacd5 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-26T18:13:08.520Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:08.520Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:08.522Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions [none]
+[debug] [2026-01-26T18:13:08.522Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions x-goog-quota-user=projects/studio-7878039128-bacd5
+[debug] [2026-01-26T18:13:08.522Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:13:08.665Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions 200
+[debug] [2026-01-26T18:13:08.666Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:13:08.670Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:08.671Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:08.672Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:13:08.930Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:13:08.931Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 {"projectId":"studio-7878039128-bacd5","projectNumber":"848465879385","displayName":"Firebase app","name":"projects/studio-7878039128-bacd5","resources":{"hostingSite":"studio-7878039128-bacd5","realtimeDatabaseInstance":"studio-7878039128-bacd5-default-rtdb"},"state":"ACTIVE","etag":"1_fb72c8ae-df9f-4428-a5c0-5234ce4a48d3"}
+[debug] [2026-01-26T18:13:18.694Z] defaultcredentials: writing to file /home/user/.config/firebase/pereirawerison_gmail_com_application_default_credentials.json
+[debug] [2026-01-26T18:13:18.709Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:18.709Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:18.712Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites pageToken=&pageSize=10
+[debug] [2026-01-26T18:13:18.897Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:13:18.900Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:13:18.903Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:18.903Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:18.904Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 
+[debug] [2026-01-26T18:13:19.027Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:13:19.027Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:13:19.028Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:19.028Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:19.028Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config [none]
+[debug] [2026-01-26T18:13:19.406Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config 200
+[debug] [2026-01-26T18:13:19.406Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config {"projectId":"studio-7878039128-bacd5","appId":"1:848465879385:web:d5ce2db68efe0f82d32c48","databaseURL":"https://studio-7878039128-bacd5-default-rtdb.firebaseio.com","storageBucket":"studio-7878039128-bacd5.firebasestorage.app","apiKey":"AIzaSyAsBTVKptCJdXBO4c2dwl3RyGQ0KWTdYj4","authDomain":"studio-7878039128-bacd5.firebaseapp.com","messagingSenderId":"848465879385","projectNumber":"848465879385","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-26T18:13:40.335Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:40.335Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:13:40.336Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:13:40.484Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:13:40.489Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 {"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.ts options detected: 
+
+[info]  ⚠     Unrecognized key(s) in object: 'serverActions'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 15.5.9
+
+[info]    - Environments: .env
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 29.6s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+./src/app/page.tsx:343:29
+Type error: Parameter 'a' implicitly has an 'any' type.
+
+  341 |
+  342 |   for (const role in usersByRole) {
+> 343 |     usersByRole[role].sort((a, b) => a.name.localeCompare(b.name));
+      |                             ^
+  344 |   }
+  345 |
+  346 |   if (showDevPreview) {
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-01-26T18:15:03.249Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-26T18:23:57.403Z] ----------------------------------------------------------------------
+[debug] [2026-01-26T18:23:57.410Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /home/user/studio/node_modules/.bin/firebase deploy
+[debug] [2026-01-26T18:23:57.411Z] CLI Version:   13.35.1
+[debug] [2026-01-26T18:23:57.412Z] Platform:      linux
+[debug] [2026-01-26T18:23:57.412Z] Node Version:  v20.19.1
+[debug] [2026-01-26T18:23:57.412Z] Time:          Mon Jan 26 2026 18:23:57 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-26T18:23:57.412Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-26T18:23:57.934Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-26T18:23:57.935Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-26T18:23:57.935Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-26T18:23:57.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-26T18:23:57.940Z] > authorizing via signed-in user (pereirawerison@gmail.com)
+[debug] [2026-01-26T18:23:57.941Z] [iam] checking project studio-7878039128-bacd5 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-26T18:23:57.942Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:23:57.943Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:23:57.944Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions [none]
+[debug] [2026-01-26T18:23:57.944Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions x-goog-quota-user=projects/studio-7878039128-bacd5
+[debug] [2026-01-26T18:23:57.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:23:58.098Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions 200
+[debug] [2026-01-26T18:23:58.099Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:23:58.100Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:23:58.100Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:23:58.105Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:23:58.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:23:58.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 {"projectId":"studio-7878039128-bacd5","projectNumber":"848465879385","displayName":"Firebase app","name":"projects/studio-7878039128-bacd5","resources":{"hostingSite":"studio-7878039128-bacd5","realtimeDatabaseInstance":"studio-7878039128-bacd5-default-rtdb"},"state":"ACTIVE","etag":"1_fb72c8ae-df9f-4428-a5c0-5234ce4a48d3"}
+[debug] [2026-01-26T18:24:12.253Z] defaultcredentials: writing to file /home/user/.config/firebase/pereirawerison_gmail_com_application_default_credentials.json
+[debug] [2026-01-26T18:24:12.281Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.282Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.284Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites pageToken=&pageSize=10
+[debug] [2026-01-26T18:24:12.479Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:24:12.479Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:24:12.483Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.483Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.484Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 
+[debug] [2026-01-26T18:24:12.593Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:24:12.594Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:24:12.594Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.594Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:12.595Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config [none]
+[debug] [2026-01-26T18:24:12.993Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config 200
+[debug] [2026-01-26T18:24:12.993Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config {"projectId":"studio-7878039128-bacd5","appId":"1:848465879385:web:d5ce2db68efe0f82d32c48","databaseURL":"https://studio-7878039128-bacd5-default-rtdb.firebaseio.com","storageBucket":"studio-7878039128-bacd5.firebasestorage.app","apiKey":"AIzaSyAsBTVKptCJdXBO4c2dwl3RyGQ0KWTdYj4","authDomain":"studio-7878039128-bacd5.firebaseapp.com","messagingSenderId":"848465879385","projectNumber":"848465879385","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-26T18:24:35.746Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:35.763Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:24:35.763Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:24:36.028Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:24:36.034Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 {"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'serverActions'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 15.5.9
+   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 32.1s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/page.tsx:343:29
+Type error: Parameter 'a' implicitly has an 'any' type.
+
+  341 |
+  342 |   for (const role in usersByRole) {
+> 343 |     usersByRole[role].sort((a, b) => a.name.localeCompare(b.name));
+      |                             ^
+  344 |   }
+  345 |
+  346 |   if (showDevPreview) {
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-01-26T18:26:02.536Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-26T18:31:15.839Z] ----------------------------------------------------------------------
+[debug] [2026-01-26T18:31:15.842Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /home/user/studio/node_modules/.bin/firebase deploy
+[debug] [2026-01-26T18:31:15.843Z] CLI Version:   13.35.1
+[debug] [2026-01-26T18:31:15.843Z] Platform:      linux
+[debug] [2026-01-26T18:31:15.844Z] Node Version:  v20.19.1
+[debug] [2026-01-26T18:31:15.844Z] Time:          Mon Jan 26 2026 18:31:15 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-26T18:31:15.844Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-26T18:31:16.462Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-26T18:31:16.462Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-26T18:31:16.462Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-26T18:31:16.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-26T18:31:16.504Z] > authorizing via signed-in user (pereirawerison@gmail.com)
+[debug] [2026-01-26T18:31:16.505Z] [iam] checking project studio-7878039128-bacd5 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-26T18:31:16.506Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:16.507Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:16.508Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions [none]
+[debug] [2026-01-26T18:31:16.508Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions x-goog-quota-user=projects/studio-7878039128-bacd5
+[debug] [2026-01-26T18:31:16.508Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:31:16.650Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions 200
+[debug] [2026-01-26T18:31:16.651Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:31:16.652Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:16.652Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:16.653Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:31:16.932Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:31:16.936Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 {"projectId":"studio-7878039128-bacd5","projectNumber":"848465879385","displayName":"Firebase app","name":"projects/studio-7878039128-bacd5","resources":{"hostingSite":"studio-7878039128-bacd5","realtimeDatabaseInstance":"studio-7878039128-bacd5-default-rtdb"},"state":"ACTIVE","etag":"1_fb72c8ae-df9f-4428-a5c0-5234ce4a48d3"}
+[debug] [2026-01-26T18:31:29.740Z] defaultcredentials: writing to file /home/user/.config/firebase/pereirawerison_gmail_com_application_default_credentials.json
+[debug] [2026-01-26T18:31:29.786Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:29.790Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:29.796Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites pageToken=&pageSize=10
+[debug] [2026-01-26T18:31:30.028Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:31:30.033Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:31:30.041Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:30.041Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:30.044Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 
+[debug] [2026-01-26T18:31:30.312Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:31:30.312Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:31:30.313Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:30.313Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:30.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config [none]
+[debug] [2026-01-26T18:31:30.735Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config 200
+[debug] [2026-01-26T18:31:30.740Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config {"projectId":"studio-7878039128-bacd5","appId":"1:848465879385:web:d5ce2db68efe0f82d32c48","databaseURL":"https://studio-7878039128-bacd5-default-rtdb.firebaseio.com","storageBucket":"studio-7878039128-bacd5.firebasestorage.app","apiKey":"AIzaSyAsBTVKptCJdXBO4c2dwl3RyGQ0KWTdYj4","authDomain":"studio-7878039128-bacd5.firebaseapp.com","messagingSenderId":"848465879385","projectNumber":"848465879385","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-26T18:31:53.260Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:53.265Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:31:53.272Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:31:53.457Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:31:53.460Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 {"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.ts options detected: 
+
+[info]  ⚠     Unrecognized key(s) in object: 'serverActions'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 15.5.9
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 28.3s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/page.tsx:343:29
+Type error: Parameter 'a' implicitly has an 'any' type.
+
+  341 |
+  342 |   for (const role in usersByRole) {
+> 343 |     usersByRole[role].sort((a, b) => a.name.localeCompare(b.name));
+      |                             ^
+  344 |   }
+  345 |
+  346 |   if (showDevPreview) {
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-01-26T18:33:17.427Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-26T18:43:58.841Z] ----------------------------------------------------------------------
+[debug] [2026-01-26T18:43:58.844Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /home/user/studio/node_modules/.bin/firebase deploy
+[debug] [2026-01-26T18:43:58.845Z] CLI Version:   13.35.1
+[debug] [2026-01-26T18:43:58.845Z] Platform:      linux
+[debug] [2026-01-26T18:43:58.845Z] Node Version:  v20.19.1
+[debug] [2026-01-26T18:43:58.846Z] Time:          Mon Jan 26 2026 18:43:58 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-01-26T18:43:58.846Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-26T18:43:59.352Z] Object "/hosting/frameworksBackend" in "firebase.json" has unknown property: {"additionalProperty":"id"}
+[debug] [2026-01-26T18:43:59.352Z] Field "/hosting" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-26T18:43:59.352Z] Field "/hosting" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-26T18:43:59.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-26T18:43:59.382Z] > authorizing via signed-in user (pereirawerison@gmail.com)
+[debug] [2026-01-26T18:43:59.383Z] [iam] checking project studio-7878039128-bacd5 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-26T18:43:59.386Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:43:59.386Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:43:59.388Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions [none]
+[debug] [2026-01-26T18:43:59.388Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions x-goog-quota-user=projects/studio-7878039128-bacd5
+[debug] [2026-01-26T18:43:59.388Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:43:59.542Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions 200
+[debug] [2026-01-26T18:43:59.543Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-7878039128-bacd5:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-26T18:43:59.547Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:43:59.548Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:43:59.552Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:43:59.797Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:43:59.798Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5 {"projectId":"studio-7878039128-bacd5","projectNumber":"848465879385","displayName":"Firebase app","name":"projects/studio-7878039128-bacd5","resources":{"hostingSite":"studio-7878039128-bacd5","realtimeDatabaseInstance":"studio-7878039128-bacd5-default-rtdb"},"state":"ACTIVE","etag":"1_fb72c8ae-df9f-4428-a5c0-5234ce4a48d3"}
+[debug] [2026-01-26T18:44:10.545Z] defaultcredentials: writing to file /home/user/.config/firebase/pereirawerison_gmail_com_application_default_credentials.json
+[debug] [2026-01-26T18:44:10.571Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.572Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.583Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites pageToken=&pageSize=10
+[debug] [2026-01-26T18:44:10.793Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:44:10.803Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:44:10.805Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.813Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.813Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 
+[debug] [2026-01-26T18:44:10.946Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites 200
+[debug] [2026-01-26T18:44:10.954Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites {"sites":[{"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-26T18:44:10.955Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.955Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:10.955Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config [none]
+[debug] [2026-01-26T18:44:11.367Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config 200
+[debug] [2026-01-26T18:44:11.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/webApps/-/config {"projectId":"studio-7878039128-bacd5","appId":"1:848465879385:web:d5ce2db68efe0f82d32c48","databaseURL":"https://studio-7878039128-bacd5-default-rtdb.firebaseio.com","storageBucket":"studio-7878039128-bacd5.firebasestorage.app","apiKey":"AIzaSyAsBTVKptCJdXBO4c2dwl3RyGQ0KWTdYj4","authDomain":"studio-7878039128-bacd5.firebaseapp.com","messagingSenderId":"848465879385","projectNumber":"848465879385","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-26T18:44:36.711Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:36.720Z] Checked if tokens are valid: true, expires at: 1769454318915
+[debug] [2026-01-26T18:44:36.721Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 [none]
+[debug] [2026-01-26T18:44:36.895Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 200
+[debug] [2026-01-26T18:44:36.901Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5 {"name":"projects/studio-7878039128-bacd5/sites/studio-7878039128-bacd5","defaultUrl":"https://studio-7878039128-bacd5.web.app","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.ts options detected: 
+
+[info]  ⚠     Unrecognized key(s) in object: 'serverActions'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 15.5.9
+   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 32.7s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+./src/components/app/activities/ActivityExecutor.tsx:551:106
+Type error: Type '{ checked: any; readOnly: true; }' is not assignable to type 'IntrinsicAttributes & Omit<CheckboxProps & RefAttributes<HTMLButtonElement>, "ref"> & RefAttributes<...>'.
+  Property 'readOnly' does not exist on type 'IntrinsicAttributes & Omit<CheckboxProps & RefAttributes<HTMLButtonElement>, "ref"> & RefAttributes<...>'.
+
+  549 |                                         onClick={() => handleQuizOptionToggle(qIndex, oIndex)}
+  550 |                                     >
+> 551 |                                         <Checkbox checked={(quizAnswers[qIndex] || []).includes(oIndex)} readOnly/>
+      |                                                                                                          ^
+  552 |                                         <span className="text-sm font-medium text-zinc-200 flex-1">{opt.text}</span>
+  553 |                                     </div>
+  554 |                                 ))}
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-01-26T18:46:03.133Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
